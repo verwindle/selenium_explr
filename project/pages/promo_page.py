@@ -15,10 +15,9 @@ class PromoPage(BasePage):
         basket_btn = self.browser.find_element(*PromoPageLocators.ADD_TO_BASKET_BTN)
         basket_btn.click()
         promo_code = self.solve_quiz_and_get_code()
-        # assert len(promo_code), 'Have not got valid promo code'
+        assert len(promo_code), 'Have not got valid promo code'
 
-        return promo_code
-        
+        return promo_code        
         
 
     

@@ -5,6 +5,9 @@ class MainPageLocators():
     LOGIN_LINK = (By.ID, "login_link")
 
 class LoginPageLocators():
-    # LOGIN_PAGE = (By.ID, "login_link")
     LOGIN_FORM = (By.ID, "login_form")
     REGISTER_FORM = (By.ID, "register_form")
+    
+class PromoPageLocators():
+    PRODUCT_AREA = (By.CLASS_NAME, 'product_main')
+    ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, '.product_main [type=submit]')
